@@ -1,0 +1,3167 @@
+{
+	"always_on": 
+		{},
+	"rooms": 
+		[
+			{
+				"r": "create_actors",
+				"actor_data": 
+					[
+						{
+							"actor_id": "Garage_Door_LFT_Parent",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															7.7415,
+															1.5,
+															-10.765
+														],
+													"extents": 
+														[
+															4.5,
+															3,
+															5
+														],
+													"rotation": 
+														[
+															0,
+															0,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Garage_Door_LFT_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Garage_Door_LFT_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Garage_Door_LFT_Parent",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Garage_Door_LFT_Parent",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_0/Interactive_Objects/Garage_Door_LFT_Parent",
+										"edit_apartment_animation": "Garage_Door_LFT_Open",
+										"idle_animation": "Garage_Door_LFT_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						},
+						{
+							"actor_id": "Garage_Door_LFT_Parent (1)",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															7.7415,
+															1.5,
+															-10.765
+														],
+													"extents": 
+														[
+															4.5,
+															3,
+															5
+														],
+													"rotation": 
+														[
+															0,
+															0,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Garage_Door_LFT_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Garage_Door_LFT_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Garage_Door_LFT_Parent (1)",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Garage_Door_LFT_Parent (1)",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_0/Interactive_Objects/Garage_Door_LFT_Parent (1)",
+										"edit_apartment_animation": "Garage_Door_LFT_Open",
+										"idle_animation": "Garage_Door_LFT_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												-5.3035,
+												0,
+												1.419
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						}
+					]
+			},
+			{
+				"r": "create_actors",
+				"actor_data": 
+					[
+						{
+							"actor_id": "Ground_Floor_Door_1_Parent",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															-10.9748306,
+															1.57291687,
+															-26.0942154
+														],
+													"extents": 
+														[
+															3.80000019,
+															2.4,
+															2.59999943
+														],
+													"rotation": 
+														[
+															0,
+															270,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Door_1_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Door_1_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Door_1_Parent",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Door_1_Parent",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_1/Interactive_Objects/Ground_Floor_Door_1_Parent",
+										"edit_apartment_animation": "Ground_Floor_Door_1_Open",
+										"idle_animation": "Ground_Floor_Door_1_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						},
+						{
+							"actor_id": "Ground_Floor_Door_2_Parent",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															-3.39063716,
+															1.57499945,
+															-24.9940128
+														],
+													"extents": 
+														[
+															3.80000019,
+															2.4,
+															2.59999943
+														],
+													"rotation": 
+														[
+															0,
+															0,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Door_2_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Door_2_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Door_2_Parent",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Door_2_Parent",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_1/Interactive_Objects/Ground_Floor_Door_2_Parent",
+										"edit_apartment_animation": "Ground_Floor_Door_2_Open",
+										"idle_animation": "Ground_Floor_Door_2_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						},
+						{
+							"actor_id": "Ground_Floor_Door_3_Parent",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															-7.151178,
+															1.57291579,
+															-23.5725555
+														],
+													"extents": 
+														[
+															3.80000019,
+															2.4,
+															2.59999943
+														],
+													"rotation": 
+														[
+															0,
+															0,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Door_3_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Door_3_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Door_3_Parent",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Door_3_Parent",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_1/Interactive_Objects/Ground_Floor_Door_3_Parent",
+										"edit_apartment_animation": "Ground_Floor_Door_3_Open",
+										"idle_animation": "Ground_Floor_Door_3_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						},
+						{
+							"actor_id": "Ground_Floor_Double_Doors_1",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															-9.8386,
+															1.575,
+															-14.5950012
+														],
+													"extents": 
+														[
+															3.80000019,
+															2.4,
+															3.59999943
+														],
+													"rotation": 
+														[
+															0,
+															0,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Double_Doors_1_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Double_Doors_1_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Double_Doors_1",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Double_Doors_1",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_1/Interactive_Objects/Ground_Floor_Double_Doors_1",
+										"edit_apartment_animation": "Ground_Floor_Double_Doors_1_Open",
+										"idle_animation": "Ground_Floor_Double_Doors_1_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						},
+						{
+							"actor_id": "Ground_Floor_Double_Doors_2",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															-10.0386,
+															1.575,
+															-21.515
+														],
+													"extents": 
+														[
+															3.80000019,
+															2.4,
+															3.59999943
+														],
+													"rotation": 
+														[
+															0,
+															180,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Double_Doors_2_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Double_Doors_2_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Double_Doors_2",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Double_Doors_2",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_1/Interactive_Objects/Ground_Floor_Double_Doors_2",
+										"edit_apartment_animation": "Ground_Floor_Double_Doors_2_Open",
+										"idle_animation": "Ground_Floor_Double_Doors_2_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						},
+						{
+							"actor_id": "Ground_Floor_Double_Doors_3",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															3.08216834,
+															1.57291579,
+															-23.504
+														],
+													"extents": 
+														[
+															3.80000114,
+															2.4,
+															3.60000038
+														],
+													"rotation": 
+														[
+															0,
+															270,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Double_Doors_3_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Double_Doors_3_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Double_Doors_3",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Double_Doors_3",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_1/Interactive_Objects/Ground_Floor_Double_Doors_3",
+										"edit_apartment_animation": "Ground_Floor_Double_Doors_3_Open",
+										"idle_animation": "Ground_Floor_Double_Doors_3_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						},
+						{
+							"actor_id": "Ground_Floor_Double_Doors_4",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															-5.35979939,
+															1.57448,
+															-26.769
+														],
+													"extents": 
+														[
+															3.42000031,
+															2.4,
+															3.59999943
+														],
+													"rotation": 
+														[
+															0,
+															179.999939,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Double_Doors_4_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Double_Doors_4_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Double_Doors_4",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Double_Doors_4",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_1/Interactive_Objects/Ground_Floor_Double_Doors_4",
+										"edit_apartment_animation": "Ground_Floor_Double_Doors_4_Open",
+										"idle_animation": "Ground_Floor_Double_Doors_4_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						},
+						{
+							"actor_id": "Ground_Floor_Double_Doors_5",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															-7.151178,
+															1.57499766,
+															-18.6236
+														],
+													"extents": 
+														[
+															3.80000019,
+															2.4,
+															3.59999943
+														],
+													"rotation": 
+														[
+															0,
+															0,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Double_Doors_5_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Ground_Floor_Double_Doors_5_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Double_Doors_5",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Ground_Floor_Double_Doors_5",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_1/Interactive_Objects/Ground_Floor_Double_Doors_5",
+										"edit_apartment_animation": "Ground_Floor_Double_Doors_5_Open",
+										"idle_animation": "Ground_Floor_Double_Doors_5_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						}
+					]
+			},
+			{
+				"r": "create_actors",
+				"actor_data": 
+					[
+						{
+							"actor_id": "Basement_Door_1_Parent",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															-4.81826067,
+															-2.50695014,
+															-13.3933983
+														],
+													"extents": 
+														[
+															3.80000019,
+															2.4,
+															2.59999943
+														],
+													"rotation": 
+														[
+															0,
+															0,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Basement_Door_1_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Basement_Door_1_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Basement_Door_1_Parent",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Basement_Door_1_Parent",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_2/Interactive_Objects/Basement_Door_1_Parent",
+										"edit_apartment_animation": "Basement_Door_1_Open",
+										"idle_animation": "Basement_Door_1_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						},
+						{
+							"actor_id": "Basement_Door_2_Parent",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															-8.380714,
+															-2.50690722,
+															-15.92824
+														],
+													"extents": 
+														[
+															3.80000019,
+															2.4,
+															2.59999943
+														],
+													"rotation": 
+														[
+															0,
+															0,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Basement_Door_2_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "Basement_Door_2_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Basement_Door_2_Parent",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "Basement_Door_2_Parent",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_2/Interactive_Objects/Basement_Door_2_Parent",
+										"edit_apartment_animation": "Basement_Door_2_Open",
+										"idle_animation": "Basement_Door_2_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						}
+					]
+			},
+			{
+				"r": "create_actors",
+				"actor_data": 
+					[
+						{
+							"actor_id": "First_Floor_Door_1_Parent",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															-0.7186906,
+															4.811308,
+															-15.0968523
+														],
+													"extents": 
+														[
+															3.80000019,
+															2.4,
+															2.59999943
+														],
+													"rotation": 
+														[
+															0,
+															179.999939,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "First_Floor_Door_1_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "First_Floor_Door_1_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "First_Floor_Door_1_Parent",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "First_Floor_Door_1_Parent",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_3/Interactive_Objects/First_Floor_Door_1_Parent",
+										"edit_apartment_animation": "First_Floor_Door_1_Open",
+										"idle_animation": "First_Floor_Door_1_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						},
+						{
+							"actor_id": "First_Floor_Door_2_Parent",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															-2.260034,
+															4.811309,
+															-24.8481369
+														],
+													"extents": 
+														[
+															3.80000019,
+															2.4,
+															2.59999943
+														],
+													"rotation": 
+														[
+															0,
+															270,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "First_Floor_Door_2_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "First_Floor_Door_2_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "First_Floor_Door_2_Parent",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "First_Floor_Door_2_Parent",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_3/Interactive_Objects/First_Floor_Door_2_Parent",
+										"edit_apartment_animation": "First_Floor_Door_2_Open",
+										"idle_animation": "First_Floor_Door_2_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						},
+						{
+							"actor_id": "First_Floor_Door_3_Parent",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															-7.15043259,
+															4.81131172,
+															-23.35864
+														],
+													"extents": 
+														[
+															3.80000019,
+															2.4,
+															2.59999943
+														],
+													"rotation": 
+														[
+															0,
+															180.000015,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "First_Floor_Door_3_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "First_Floor_Door_3_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "First_Floor_Door_3_Parent",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "First_Floor_Door_3_Parent",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_3/Interactive_Objects/First_Floor_Door_3_Parent",
+										"edit_apartment_animation": "First_Floor_Door_3_Open",
+										"idle_animation": "First_Floor_Door_3_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						},
+						{
+							"actor_id": "First_Floor_Door_4_Parent",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															-7.15043163,
+															4.81131172,
+															-15.0968523
+														],
+													"extents": 
+														[
+															3.80000019,
+															2.4,
+															2.59999943
+														],
+													"rotation": 
+														[
+															0,
+															179.999969,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "First_Floor_Door_4_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "First_Floor_Door_4_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "First_Floor_Door_4_Parent",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "First_Floor_Door_4_Parent",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_3/Interactive_Objects/First_Floor_Door_4_Parent",
+										"edit_apartment_animation": "First_Floor_Door_4_Open",
+										"idle_animation": "First_Floor_Door_4_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						},
+						{
+							"actor_id": "First_Floor_Door_5_Parent",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															-8.829544,
+															4.811309,
+															-21.3590317
+														],
+													"extents": 
+														[
+															3.80000019,
+															2.4,
+															2.59999943
+														],
+													"rotation": 
+														[
+															0,
+															270,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "First_Floor_Door_5_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "First_Floor_Door_5_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "First_Floor_Door_5_Parent",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "First_Floor_Door_5_Parent",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_3/Interactive_Objects/First_Floor_Door_5_Parent",
+										"edit_apartment_animation": "First_Floor_Door_5_Open",
+										"idle_animation": "First_Floor_Door_5_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						},
+						{
+							"actor_id": "First_Floor_Door_6_Parent",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															-7.150344,
+															4.81131554,
+															-27.1126461
+														],
+													"extents": 
+														[
+															3.80000019,
+															2.4,
+															2.59999943
+														],
+													"rotation": 
+														[
+															0,
+															0,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "First_Floor_Door_6_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "First_Floor_Door_6_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "First_Floor_Door_6_Parent",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "First_Floor_Door_6_Parent",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_3/Interactive_Objects/First_Floor_Door_6_Parent",
+										"edit_apartment_animation": "First_Floor_Door_6_Open",
+										"idle_animation": "First_Floor_Door_6_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						},
+						{
+							"actor_id": "First_Floor_Door_7_Parent",
+							"components": 
+								[
+									{
+										"type": "volume_trigger",
+										"volume_data": 
+											[
+												{
+													"collision_type": "box",
+													"center": 
+														[
+															0.948677242,
+															4.811309,
+															-21.6341381
+														],
+													"extents": 
+														[
+															3.80000019,
+															2.4,
+															2.59999943
+														],
+													"rotation": 
+														[
+															0,
+															90.0000153,
+															0
+														]
+												}
+											],
+										"trigger_type": "local"
+									},
+									{
+										"type": "net_actor_node",
+										"inputs": 
+											[
+												{
+													"input_port": "on",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "First_Floor_Door_7_Open",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												},
+												{
+													"input_port": "off",
+													"actions": 
+														[
+															{
+																"a": "model_animation",
+																"r": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"o": 
+																	[
+																		0,
+																		0,
+																		0
+																	],
+																"uid": "local",
+																"p": 
+																	{
+																		"name": "First_Floor_Door_7_Close",
+																		"wrap_mode": "once",
+																		"switch_method": "blend",
+																		"wait_method": "none"
+																	}
+															}
+														]
+												}
+											],
+										"outputs": 
+											[
+												{
+													"output_port": "volume_trigger_enter_first",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "First_Floor_Door_7_Parent",
+																"input_port": "on"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												},
+												{
+													"output_port": "volume_trigger_exit_all",
+													"cooldown": 2,
+													"output_port_data": 
+														[
+															{
+																"type": "local_wiring",
+																"actor_id": "First_Floor_Door_7_Parent",
+																"input_port": "off"
+															}
+														],
+													"restricted_types": 
+														[
+															"avakin",
+															"petkin"
+														]
+												}
+											]
+									},
+									{
+										"type": "model",
+										"version": 1,
+										"game_asset_url": "sceneref://Room_3/Interactive_Objects/First_Floor_Door_7_Parent",
+										"edit_apartment_animation": "First_Floor_Door_7_Open",
+										"idle_animation": "First_Floor_Door_7_Close",
+										"idle_wrap_mode": "last_frame"
+									}
+								],
+							"actions": 
+								[
+									{
+										"a": "position",
+										"o": 
+											[
+												0,
+												0,
+												0
+											],
+										"uid": "local"
+									},
+									{
+										"a": "model_set_visible",
+										"uid": "local",
+										"p": 
+											{
+												"method": "Immediate",
+												"visible": true
+											}
+									}
+								]
+						}
+					]
+			},
+			{}
+		]
+}
