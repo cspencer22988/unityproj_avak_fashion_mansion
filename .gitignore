@@ -2,10 +2,10 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-unityproj_avak_fashion_mansion/Assets/Altspace*
-unityproj_avak_fashion_mansion/Assets/Plugins*
-unityproj_avak_fashion_mansion/Assets/Prefabs*
-unityproj_avak_fashion_mansion/Assets/Resources*
+*/Assets/Altspace*
+*/Assets/Plugins*
+*/Assets/Prefabs*
+*/Assets/Resources*
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
